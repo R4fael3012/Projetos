@@ -1,0 +1,179 @@
+/* Estilos Gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* Cabeçalho e Navegação */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 15px 0;
+    position: sticky; /* Keeps the header fixed at the top when scrolling */
+    top: 0;
+    z-index: 1000; /* Ensures the header stays above other content */
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Spacing between navigation links */
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+nav a:hover {
+    background-color: #555;
+    border-radius: 4px;
+}
+
+/* Seções */
+section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+#sobre {
+    background-color: #fff;
+    color: #333;
+}
+
+#projetos {
+    background-color: #e2e2e2;
+    color: #333;
+}
+
+#contato {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Estilo para a seção "Sobre Mim" */
+.sobre-conteudo {
+    display: flex;
+    flex-direction: column; /* Stacks image and text on smaller screens */
+    align-items: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.sobre-conteudo img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Makes the image circular */
+    border: 4px solid #007bff; /* Colored border */
+    object-fit: cover; /* Ensures the image fills the space without distortion */
+}
+
+.sobre-conteudo p {
+    max-width: 700px;
+    text-align: justify;
+}
+
+/* Estilo para a seção "Projetos" */
+.projetos-lista {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap to the next line */
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.projeto-item {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px; /* Fixed width for project items */
+    text-align: left;
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.projeto-item:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.projeto-item h3 {
+    color: #007bff;
+    margin-top: 0;
+}
+
+.projeto-item a {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 15px;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.projeto-item a:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo para a seção "Contato" */
+.contato-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+    flex-wrap: wrap; /* Ensures links wrap on smaller screens */
+}
+
+.contato-links a {
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.contato-links a:hover {
+    color: #007bff; /* Color change on hover */
+}
+
+.contato-links img {
+    width: 32px;
+    height: 32px;
+    vertical-align: middle;
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9em;
+}
+
+/* Media Queries para Responsividade */
+@media (min-width: 768px) {
+    .sobre-conteudo {
+        flex-direction: row; /* Aligns horizontally on larger screens */
+        text-align: left;
+    }
+
+    .sobre-conteudo p {
+        text-align: left;
+    }
+}
