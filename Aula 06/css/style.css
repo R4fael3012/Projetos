@@ -1,35 +1,69 @@
-header{
-    color: brown;
-    text-align: center;
-    font-style:oblique
+
+header {
+  text-align: center;
+  padding: 5px;
+  color: black;
 }
 
-main{
-    margin: auto auto;
-    padding: 40px;
-    height: 100px;
-    width: 1000px;
-    border: 4px solid black;
+h1 {
+  font-size: 2.5rem;
+  margin: 15px;
 }
 
-section{
-    margin:auto auto;
-    padding: 40px;
-    height: 100px;
-    width: 1000px;
-    border: 4px solid black;
+main {
+  margin: 0 auto;
+  font-family: Arial;
 }
 
-div{
-    font-size: 15px;
+.produtos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
 }
 
-button{
-    padding: 10px;
-    border-radius: 10px;
-    transition: 100ms;
+.produto {
+  background-color: black;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 10px;
+  width: 1000px;
 }
 
-button:hover{
-    background-color: gray;
+.produto h2 {
+  color: white;
+  margin-bottom: 10px;
 }
+
+.produto p {
+  color: gray;  
+  margin-bottom: 15px;
+  line-height: 1.4;
+}
+
+
+
+span{
+    color: orange;
+}
+
+button {
+  background-color: orange;
+  color: black;
+  border: none;
+  padding: 10px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color:#cf6d12;
+}
+
+img{
+    width: 200px;
+    height: 200px;
+}
+
