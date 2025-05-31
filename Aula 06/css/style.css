@@ -28,6 +28,9 @@ main {
   border-radius: 10px;
   padding: 10px;
   width: 1000px;
+  display: flex;
+  align-items: center;
+  text-align: center;
 }
 
 .produto h2 {
@@ -41,7 +44,9 @@ main {
   line-height: 1.4;
 }
 
-
+.imagem-produto{
+  padding-left: 350px;
+}
 
 span{
     color: orange;
@@ -63,7 +68,8 @@ button:hover {
 }
 
 img{
+    
+    border-radius: 50%;
     width: 200px;
     height: 200px;
 }
-
