@@ -37,7 +37,7 @@ INSERT INTO Alunos (ID_Aluno, Nome, Matricula, CPF, Serie, ID_Composição) VALU
 (2, 'Matheus', 2024002, '100.22.552-10', '2º', '1,3'),
 (3, 'Carol', 2024003, '222.258.365-10', '3º', '1,2,3');
 
-
+SELECT * FROM Disciplina
 
 
 
